@@ -3,3 +3,6 @@
 	margin: 0 auto;
 }
 
+body{
+	@apply min-h-full bg-white dark:bg-zinc-900 transition;
+}

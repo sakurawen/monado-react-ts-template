@@ -1,0 +1,5 @@
+{
+  "desc": "React template, integrating React Router, Redux Tookit, React I18next, Tailwindcss",
+  "empty-list":"empty list",
+  "add":"Append"
+}

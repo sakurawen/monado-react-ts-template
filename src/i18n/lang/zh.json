@@ -1,0 +1,5 @@
+{
+  "desc": "React模板 ,集成 React Router、Redux Tookit、React I18next、Tailwindcss",
+  "empty-list":"空列表",
+  "add":"添加任务"
+}

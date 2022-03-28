@@ -1,3 +1,13 @@
 {
-  "port": 4000
+  "server": {
+    "port": 4000
+  },
+  "featrue": {
+    "mdx": true,
+    "cssModule": true,
+    "scss": true
+  },
+  "plugins": {
+    "bundleAnalyzer": false
+  }
 }

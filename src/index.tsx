@@ -1,16 +1,25 @@
-import React from 'react';
-import { render } from 'react-dom';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { MDXProvider } from '@mdx-js/react';
+import * as components from '@/components/mdx';
+import { Provider } from 'react-redux';
+import store from '@/store';
 import App from '@/App';
 import '@/index.css';
+import './i18n';
 
-const root = document.querySelector('#root');
+const container = document.querySelector('#root') as Element;
+const root = createRoot(container);
 
-render(
-	<React.StrictMode>
-		<Router>
-			<App />
-		</Router>
-	</React.StrictMode>,
-	root
+root.render(
+	<StrictMode>
+		<MDXProvider components={components}>
+			<Provider store={store}>
+				<Router>
+					<App />
+				</Router>
+			</Provider>
+		</MDXProvider>
+	</StrictMode>
 );
