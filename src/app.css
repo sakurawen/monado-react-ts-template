@@ -4,8 +4,9 @@
 }
 
 * {
-	@apply selection:bg-teal-200/40 selection:text-teal-500 dark:selection:bg-teal-600/50 dark:selection:text-white;
+	@apply selection:bg-teal-200/40 selection:text-teal-500 dark:selection:bg-teal-600/50 dark:selection:text-white ;
 }
+
 body {
 	@apply min-h-full bg-white dark:bg-zinc-900 transition;
 }

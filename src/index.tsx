@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { MDXProvider } from '@mdx-js/react';
-import * as components from '@/components/mdx';
+import * as components from '@/components/Mdx';
 import { Provider } from 'react-redux';
 import store from '@/store';
 import App from '@/App';
