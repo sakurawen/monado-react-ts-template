@@ -40,32 +40,34 @@ const TodoList: FC = () => {
 
 	return (
 		<div className='mt-36 mx-auto max-w-sm'>
-			<div className='px-2 selection:bg-sky-200/70 selection:text-sky-500 dark:selection:bg-indigo-600/20 dark:selection:text-white'>
-				<h2 className='text-4xl leading-snug font-black text-transparent bg-gradient-to-tr  bg-clip-text to-sky-600 from-sky-500 dark:to-indigo-400 dark:from-violet-600'>
+			<div className='px-2 selection:bg-teal-200/70 selection:text-teal-500 dark:selection:bg-teal-600/20 dark:selection:text-white'>
+				<h2 className='text-4xl leading-snug font-black text-transparent bg-gradient-to-tr  bg-clip-text to-teal-500 from-teal-300 dark:to-teal-300 dark:from-teal-500'>
 					Monado
 					<br />
 					React Template
 				</h2>
-				<p className='text-gray-400 text-sm my-2 leading-normal'>{t('desc')}</p>
+				<p className='text-gray-800 dark:text-gray-400 text-sm my-2 leading-normal'>
+					{t('desc')}
+				</p>
 				<div className='mt-4'>
 					<ol>
 						{list.length ? (
 							list.map((item, index) => {
 								return (
 									<li
-										className='text-left group mb-2  hover:px-2 transition-all px-0 hover:bg-sky-100 dark:hover:bg-zinc-700   rounded-md list-inside'
+										className='text-left group mb-2  hover:px-2 transition-all px-0 hover:bg-teal-100 dark:hover:bg-zinc-700   rounded-md list-inside'
 										key={index}
 									>
 										<div className='flex h-10 py-2 box-border items-center justify-between'>
 											<span className='flex-1 overflow-hidden overflow-ellipsis whitespace-nowrap'>
-												<i className='w-2 h-2 align-middle inline-block text-sky-900 not-italic mr-2 rounded-full dark:bg-indigo-600 bg-sky-300 text-center text-sm'></i>
+												<i className='w-2 h-2 align-middle inline-block text-teal-900 not-italic mr-2 rounded-full dark:bg-teal-600 bg-teal-300 text-center text-sm'></i>
 												<span className='text-sm whitespace-pre-wrap text-gray-700 dark:text-gray-400'>
 													{item.text}
 												</span>
 											</span>
 											<button
 												onClick={() => handleDelListItem(index)}
-												className='group-hover:opacity-100 opacity-0 p-1 text-gray-400 hover:text-sky-500 dark:hover:text-indigo-500 hover:ring-2 hover:ring-sky-500 dark:ring-indigo-600 rounded-md'
+												className='group-hover:opacity-100 opacity-0 p-1 text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 hover:ring-2 hover:ring-teal-500 dark:ring-teal-600 rounded-md'
 											>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
@@ -100,14 +102,14 @@ const TodoList: FC = () => {
 						value={inputVal}
 						onChange={(e) => handleChangeInputVal(e.target.value)}
 						className='w-full transition text-black dark:text-gray-400 text-base rounded-md p-2 ring-1 focus:ring-2 
-            ring-gray-300 dark:ring-indigo-100/20 focus:ring-sky-400 dark:focus:ring-indigo-600 dark:bg-zinc-800 
+            ring-gray-300 dark:ring-teal-100/20 focus:ring-teal-400 dark:focus:ring-teal-600 dark:bg-zinc-800 
             outline-none focus:border-none border-none'
 						type='text'
 					/>
 					<div
 						onClick={handleAppendListItem}
-						className='py-2 px-8  text-center bg-sky-500 dark:bg-indigo-600 ring-0 hover:ring-2 hover:bg-sky-600 dark:hover:bg-indigo-700 dark:ring-indigo-600/40 transition 
-            text-white select-none cursor-pointer   mt-4  rounded-md'
+						className='py-2 px-8  text-center bg-teal-400 hover:bg-teal-500 text-black shadow-transparent transition-all  hover:shadow-lg hover:shadow-teal-400/20  ring-teal-300   
+             select-none cursor-pointer   mt-4  rounded-md'
 					>
 						<span className='text-sm inline-block'>{t('add')}</span>
 					</div>

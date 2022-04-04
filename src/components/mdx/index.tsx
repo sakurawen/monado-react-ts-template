@@ -1,5 +1,6 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { nord as style } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import Highlight, { defaultProps, Language } from 'prism-react-renderer';
+import theme from 'prism-react-renderer/themes/oceanicNext';
+
 export const h1 = (props: unknown) => {
 	return (
 		<h1
@@ -75,8 +76,12 @@ export const a = (props: unknown) => {
 	);
 };
 
-export const code = (props: any) => {
-	const className: string = props.className;
+interface CodeProps {
+	className: string;
+	children: string;
+}
+export const code = (props: unknown) => {
+	const className: string = (props as CodeProps).className;
 	if (!className) {
 		return (
 			<code
@@ -85,17 +90,26 @@ export const code = (props: any) => {
 			/>
 		);
 	}
-	const lang = className.replace('language-', '');
+	const lang = className.replace('language-', '') as Language;
 	return (
-		<SyntaxHighlighter
-			customStyle={{
-				backgroundColor: 'rgb(39, 39, 42)',
-			}}
-			useInlineStyles={true}
-			style={style}
+		<Highlight
+			code={(props as CodeProps).children.trim()}
 			language={lang}
-			{...props}
-		></SyntaxHighlighter>
+			{...defaultProps}
+			theme={undefined}
+		>
+			{({ className, style, tokens, getLineProps, getTokenProps }) => (
+				<pre className={`p-4 rounded-md ${className}`} style={style}>
+					{tokens.map((line, i) => (
+						<div key={i} {...getLineProps({ line, key: i })}>
+							{line.map((token, key) => (
+								<span key={key} {...getTokenProps({ token, key })} />
+							))}
+						</div>
+					))}
+				</pre>
+			)}
+		</Highlight>
 	);
 };
 

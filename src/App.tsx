@@ -4,7 +4,6 @@ import Menu from './components/Menu';
 import '@/app.css';
 
 const App: FC = () => {
-  
 	useEffect(() => {
 		const theme = localStorage.getItem('theme');
 		if (!theme) {

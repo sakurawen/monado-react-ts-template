@@ -31,7 +31,7 @@ const Menu: FC = () => {
 		<div className='flex justify-center gap-4 align-center my-6 dark:text-white'>
 			<button
 				onClick={() => navigate('/')}
-				className='hover:text-sky-500 dark:hover:text-indigo-500 transition'
+				className='hover:text-teal-500 dark:hover:text-teal-500 transition'
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -50,7 +50,7 @@ const Menu: FC = () => {
 			</button>
 			<button
 				onClick={toggleTheme}
-				className='hover:text-sky-500 dark:hover:text-indigo-500 transition'
+				className='hover:text-teal-500 dark:hover:text-teal-500 transition'
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -69,7 +69,7 @@ const Menu: FC = () => {
 			</button>
 			<button
 				onClick={toggleLang}
-				className='hover:text-sky-500 dark:hover:text-indigo-500 transition'
+				className='hover:text-teal-500 dark:hover:text-teal-500 transition'
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
@@ -88,7 +88,7 @@ const Menu: FC = () => {
 			</button>
 			<button
 				onClick={() => navigate('/about')}
-				className='hover:text-sky-500 dark:hover:text-indigo-500 transition'
+				className='hover:text-teal-500 dark:hover:text-teal-500 transition'
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
