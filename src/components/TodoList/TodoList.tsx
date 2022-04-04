@@ -40,7 +40,7 @@ const TodoList: FC = () => {
 
 	return (
 		<div className='mt-36 mx-auto max-w-sm'>
-			<div className='px-2 selection:bg-teal-200/70 selection:text-teal-500 dark:selection:bg-teal-600/20 dark:selection:text-white'>
+			<div className='px-2 selection:bg-teal-200/40 selection:text-teal-500 dark:selection:bg-teal-600/50 dark:selection:text-white'>
 				<h2 className='text-4xl leading-snug font-black text-transparent bg-gradient-to-tr  bg-clip-text to-teal-500 from-teal-300 dark:to-teal-300 dark:from-teal-500'>
 					Monado
 					<br />
@@ -67,7 +67,7 @@ const TodoList: FC = () => {
 											</span>
 											<button
 												onClick={() => handleDelListItem(index)}
-												className='group-hover:opacity-100 opacity-0 p-1 text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 hover:ring-2 hover:ring-teal-500 dark:ring-teal-600 rounded-md'
+												className='group-hover:opacity-100 opacity-0 p-1 text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 hover:ring-2 hover:ring-teal-500 dark:ring-teal-600 rounded-md'
 											>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
