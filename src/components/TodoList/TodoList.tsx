@@ -40,7 +40,7 @@ const TodoList: FC = () => {
 
 	return (
 		<div className='mt-36 mx-auto max-w-sm'>
-			<div className='px-2 selection:bg-teal-200/40 selection:text-teal-500 dark:selection:bg-teal-600/50 dark:selection:text-white'>
+			<div className='px-2 '>
 				<h2 className='text-4xl leading-snug font-black text-transparent bg-gradient-to-tr  bg-clip-text to-teal-500 from-teal-300 dark:to-teal-300 dark:from-teal-500'>
 					Monado
 					<br />
