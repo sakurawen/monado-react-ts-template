@@ -99,7 +99,7 @@ const TodoList: FC = () => {
 				/>
 				<div
 					onClick={handleAppendListItem}
-					className='py-2 px-8  text-center bg-teal-400 hover:bg-teal-500 text-black shadow-transparent transition-all  hover:shadow-lg hover:shadow-teal-400/20  ring-teal-300   
+					className='py-2 px-8  text-center bg-teal-400 hover:bg-teal-500 dark:hover:bg-teal-300  text-black shadow-transparent transition-all  hover:shadow-lg hover:shadow-teal-400/20  ring-teal-300   
              select-none cursor-pointer   mt-4  rounded-md'
 				>
 					<span className='text-sm inline-block'>{t('add')}</span>

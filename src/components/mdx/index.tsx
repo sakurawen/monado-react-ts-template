@@ -1,5 +1,4 @@
 import Highlight, { defaultProps, Language } from 'prism-react-renderer';
-import theme from 'prism-react-renderer/themes/oceanicNext';
 
 export const h1 = (props: unknown) => {
 	return (
@@ -101,9 +100,9 @@ export const code = (props: unknown) => {
 			{({ className, style, tokens, getLineProps, getTokenProps }) => (
 				<pre className={`p-4 rounded-md ${className}`} style={style}>
 					{tokens.map((line, i) => (
-						<div key={i} {...getLineProps({ line, key: i })}>
+						<div key={i} {...getLineProps({ line })}>
 							{line.map((token, key) => (
-								<span key={key} {...getTokenProps({ token, key })} />
+								<span key={key} {...getTokenProps({ token })} />
 							))}
 						</div>
 					))}
