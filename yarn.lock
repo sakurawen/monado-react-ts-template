@@ -1134,10 +1134,10 @@
     "@types/mdx" "^2.0.0"
     "@types/react" ">=16"
 
-"@monado/scripts@0.0.30":
-  version "0.0.30"
-  resolved "https://registry.yarnpkg.com/@monado/scripts/-/scripts-0.0.30.tgz#3f4869c7b4f88a700a92acc8512100f8cfa98e26"
-  integrity sha512-EtektbkKDzre11KTNkc6AIW6FjHEdlniyK71C+/KdKfvrL2ipIl/vfSckb9axTgN4sCeIsc+WSU1aNIXGUciEg==
+"@monado/scripts@^0.0.32":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@monado/scripts/-/scripts-0.0.32.tgz#d2f38323313e5f5001be7623e99acae994936929"
+  integrity sha512-GPdQvJ5T/8b9vSZvy8AF280Ry/eEPyXbUDmdiXXjpdshkrm+AmVnQ3FPiVdDRek4jlV8vTEJhHzGsDf1zkQAJQ==
   dependencies:
     "@babel/core" "^7.17.5"
     "@babel/preset-env" "^7.16.11"
