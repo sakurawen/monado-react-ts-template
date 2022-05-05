@@ -1,34 +1,47 @@
 import { FC, useRef } from 'react';
-import { useAppSelector, useAppDispatch } from '@/hooks';
-import { todoListSliceAction } from '@/store/reducer/todoListSlice';
 import { useTranslation } from 'react-i18next';
+import { useTodoList } from '@/hooks';
+import shallow from 'zustand/shallow';
 
 const TodoList: FC = () => {
-	const dispatch = useAppDispatch();
-	const inputVal = useAppSelector((state) => state.todoList.inputVal);
-	const list = useAppSelector((state) => state.todoList.data);
+
+	const [
+		data,
+		inputValue,
+		setInputValue,
+		pushListItem,
+		delListItem,
+		cleanInputValue,
+	] = useTodoList(
+		(state) => [
+			state.data,
+			state.inputValue,
+			state.setInputValue,
+			state.pushListItem,
+			state.delListItem,
+			state.cleanInputValue,
+		],
+		shallow
+	);
 
 	const inputRef = useRef<HTMLInputElement>(null);
 
 	const { t } = useTranslation();
 	const handleAppendListItem = () => {
-		if (inputVal.trim().length === 0) {
+		if (inputValue.trim().length === 0) {
 			return;
 		}
-		dispatch(
-			todoListSliceAction.pushListItem({
-				text: inputVal,
-			})
-		);
+		pushListItem({ text: inputValue });
+		cleanInputValue();
 		inputRef.current?.focus();
 	};
 
 	const handleChangeInputVal = (val: string) => {
-		dispatch(todoListSliceAction.setInputValue(val));
+		setInputValue(val);
 	};
 
 	const handleDelListItem = (delIndex: number) => {
-		dispatch(todoListSliceAction.delListItem(delIndex));
+		delListItem(delIndex);
 	};
 
 	const handleEnterDown = (e: React.KeyboardEvent) => {
@@ -42,8 +55,8 @@ const TodoList: FC = () => {
 		<div>
 			<div className='mt-4'>
 				<ol>
-					{list.length ? (
-						list.map((item, index) => {
+					{data.length ? (
+						data.map((item, index) => {
 							return (
 								<li
 									className='text-left group mb-2  hover:px-2 transition-all px-0 hover:bg-teal-100 dark:hover:bg-zinc-700   rounded-md list-inside'
@@ -90,7 +103,7 @@ const TodoList: FC = () => {
 				<input
 					ref={inputRef}
 					onKeyDown={handleEnterDown}
-					value={inputVal}
+					value={inputValue}
 					onChange={(e) => handleChangeInputVal(e.target.value)}
 					className='w-full transition text-black dark:text-gray-400 text-base rounded-md p-2 ring-1 focus:ring-2 
             ring-gray-300 dark:ring-teal-100/20 focus:ring-teal-400 dark:focus:ring-teal-600 dark:bg-zinc-800 

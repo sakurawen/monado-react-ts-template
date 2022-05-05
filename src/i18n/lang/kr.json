@@ -1,5 +1,5 @@
 {
-  "desc": "React 템플릿, React Router, Redux Tookit, React I18next, Tailwindcss 통합",
+  "desc": "React 템플릿, React Router, Zustand, React I18next, Tailwindcss 통합",
   "empty-list":"빈 목록",
   "add":"작업 추가"
 }

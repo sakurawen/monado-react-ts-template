@@ -1,5 +1,5 @@
 {
-  "desc": "Reactテンプレート、Reactルーター、Redux Tookit、React I18next、Tailwindcssを統合",
+  "desc": "Reactテンプレート、Reactルーター、Zustand、React I18next、Tailwindcssを統合",
   "empty-list":"空のリスト",
   "add":"タスクを追加"
 }
