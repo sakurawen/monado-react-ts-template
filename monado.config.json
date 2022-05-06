@@ -1,6 +1,7 @@
 {
-  "server": {
-    "port": 4000
+  "devServer": {
+    "port": 4000,
+    "proxy": {}
   },
   "featrue": {
     "mdx": true,
