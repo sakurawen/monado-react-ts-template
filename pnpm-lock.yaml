@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@mdx-js/react': ^2.1.1
-  '@monado/scripts': 0.0.44
+  '@monado/scripts': 0.0.46
   '@types/mdx': ^2.0.1
   '@types/react': 18.0.5
   '@types/react-dom': 18.0.1
@@ -25,7 +25,7 @@ specifiers:
 
 dependencies:
   '@mdx-js/react': 2.1.1_react@18.1.0
-  '@monado/scripts': 0.0.44_sass@1.51.0
+  '@monado/scripts': 0.0.46_sass@1.51.0
   i18next: 21.6.16
   immer: 9.0.12
   prism-react-renderer: 1.3.1_react@18.1.0
@@ -1516,12 +1516,12 @@ packages:
       react: 18.1.0
     dev: false
 
-  /@monado/scripts/0.0.44_sass@1.51.0:
-    resolution: {integrity: sha512-cFXWbpb1D1R4v/jkGt/ByXU52o5rzO/+wxLnvoq/qwnYPQKMA3ET5bKajVcdYvdHdGxEHZY/5GfI/k/m72f3lA==}
+  /@monado/scripts/0.0.46_sass@1.51.0:
+    resolution: {integrity: sha512-itW416Fj6Cs/1rOIoIklslSZiNTesbYaZooMnjJ+DE0KEGj2aRO65g/UyZEAP+/sQt9CgaU009rfjeNGrQEY6A==}
     hasBin: true
     dependencies:
       '@mdx-js/loader': 2.1.1_webpack@5.72.0
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.5_tiuwzk7ffy3ddzmqnht67nwxnm
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.6_ffoope4bxc6zqgcasyqmdgdxky
       '@svgr/webpack': 6.2.1
       '@swc/core': 1.2.182
       '@swc/helpers': 0.3.13
@@ -1547,7 +1547,7 @@ packages:
       postcss-loader: 6.2.1_g4najheu5gwop3kphiif6aqpde
       postcss-normalize: 10.0.1_3a4j5usjtoc23kersryedrwazm
       postcss-preset-env: 7.5.0_postcss@8.4.13
-      react-refresh: 0.11.0
+      react-refresh: 0.13.0
       regenerator-runtime: 0.13.9
       resolve: 1.22.0
       resolve-url-loader: 5.0.0
@@ -1607,8 +1607,8 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
 
-  /@pmmmwh/react-refresh-webpack-plugin/0.5.5_tiuwzk7ffy3ddzmqnht67nwxnm:
-    resolution: {integrity: sha512-RbG7h6TuP6nFFYKJwbcToA1rjC1FyPg25NR2noAZ0vKI+la01KTSRPkuVPE+U88jXv7javx2JHglUcL1MHcshQ==}
+  /@pmmmwh/react-refresh-webpack-plugin/0.5.6_ffoope4bxc6zqgcasyqmdgdxky:
+    resolution: {integrity: sha512-IIWxofIYt/AbMwoeBgj+O2aAXLrlCQVg+A4a2zfpXFNHgP8o8rvi3v+oe5t787Lj+KXlKOh8BAiUp9bhuELXhg==}
     engines: {node: '>= 10.13'}
     peerDependencies:
       '@types/webpack': 4.x || 5.x
@@ -1640,7 +1640,7 @@ packages:
       find-up: 5.0.0
       html-entities: 2.3.3
       loader-utils: 2.0.2
-      react-refresh: 0.11.0
+      react-refresh: 0.13.0
       schema-utils: 3.1.1
       source-map: 0.7.3
       webpack: 5.72.0_arvid5jd6jqf7iroa6rwjjy5ue
@@ -6373,8 +6373,8 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
 
-  /react-refresh/0.11.0:
-    resolution: {integrity: sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==}
+  /react-refresh/0.13.0:
+    resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
     engines: {node: '>=0.10.0'}
     dev: false
 
