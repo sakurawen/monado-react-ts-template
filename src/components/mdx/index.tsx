@@ -1,6 +1,6 @@
 import Highlight, { defaultProps, Language } from 'prism-react-renderer';
 
-export const h1 = (props: unknown) => {
+export const h1 = (props: object) => {
 	return (
 		<h1
 			className='font-bold text-3xl font-noto-sans  leading-normal my-4 dark:text-gray-200'
@@ -9,7 +9,7 @@ export const h1 = (props: unknown) => {
 	);
 };
 
-export const h2 = (props: unknown) => {
+export const h2 = (props: object) => {
 	return (
 		<h2
 			className='font-bold text-2xl  leading-normal my-4 font-noto-sans dark:text-gray-200'
@@ -18,7 +18,7 @@ export const h2 = (props: unknown) => {
 	);
 };
 
-export const h3 = (props: unknown) => {
+export const h3 = (props: object) => {
 	return (
 		<h3
 			className='font-bold text-xl  leading-normal my-4 font-noto-sans dark:text-gray-200'
@@ -27,7 +27,7 @@ export const h3 = (props: unknown) => {
 	);
 };
 
-export const h4 = (props: unknown) => {
+export const h4 = (props: object) => {
 	return (
 		<h4
 			className='font-bold text-lg  leading-normal my-4 font-noto-sans dark:text-gray-200'
@@ -35,7 +35,7 @@ export const h4 = (props: unknown) => {
 		/>
 	);
 };
-export const h5 = (props: unknown) => {
+export const h5 = (props: object) => {
 	return (
 		<h5
 			className='font-bold text-base  leading-normal my-4 font-noto-sans dark:text-gray-200'
@@ -43,7 +43,7 @@ export const h5 = (props: unknown) => {
 		/>
 	);
 };
-export const h6 = (props: unknown) => {
+export const h6 = (props: object) => {
 	return (
 		<h6
 			className='font-bold text-sm  leading-normal my-4 font-noto-sans dark:text-gray-200'
@@ -52,7 +52,7 @@ export const h6 = (props: unknown) => {
 	);
 };
 
-export const p = (props: unknown) => {
+export const p = (props: object) => {
 	return (
 		<p
 			className=' text-base  leading-relaxed my-2.5 font-noto-sans dark:text-gray-200'
@@ -61,11 +61,11 @@ export const p = (props: unknown) => {
 	);
 };
 
-export const pre = (props: unknown) => {
+export const pre = (props: object) => {
 	return <pre className='my-6' {...props} />;
 };
 
-export const a = (props: unknown) => {
+export const a = (props: object) => {
 	return (
 		<a
 			target='_blank'
@@ -79,7 +79,7 @@ interface CodeProps {
 	className: string;
 	children: string;
 }
-export const code = (props: unknown) => {
+export const code = (props: object) => {
 	const className: string = (props as CodeProps).className;
 	if (!className) {
 		return (
@@ -112,11 +112,11 @@ export const code = (props: unknown) => {
 	);
 };
 
-export const img = (props: unknown) => {
+export const img = (props: object) => {
 	return <img className='mx-auto max-w-full my-6' {...props} />;
 };
 
-export const blockquote = (props: unknown) => {
+export const blockquote = (props: object) => {
 	return (
 		<blockquote
 			className='rounded-sm bg-gray-100 dark:bg-zinc-800  border-l-4 pl-4 flow-root border-gray-300 dark:border-zinc-600'
