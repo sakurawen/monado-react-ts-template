@@ -4,6 +4,9 @@
     "port": 5000,
     "proxy": {}
   },
+  "alias": {
+    "@": "src"
+  },
   "featrue": {
     "mdx": true,
     "cssModule": true,

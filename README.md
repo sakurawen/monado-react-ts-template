@@ -7,3 +7,60 @@
 ```js
 npx @monado/cli create <projectName>
 ```
+
+
+## configuration
+在项目文件夹下创建 monado.config.json 作为配置文件，目前支持的配置如下
+
+```json
+{
+	"publicPath": "/",
+	"devServer": {
+		"port": 4000,
+		"proxy": {
+			"/api": "http://localhost:9000"
+		}
+	},
+  "alias":{
+    "@":"src"
+  },
+	"featrue": {
+		"mdx": true,
+		"cssModule": true,
+		"scss": true
+	},
+	"plugins": {
+		"bundleAnalyzer": false
+	}
+}
+```
+
+### 开发代理配置
+
+@monado/scripts 的配置文件的开发服务代理使用与 webpack 开发代理一样的规则
+
+```json
+{
+	"devServer": {
+		"proxy": {
+			"/api": {
+				"target": "http://localhost:8000",
+				"pathRewrite": {
+					"^/api": ""
+				}
+			}
+		}
+	}
+}
+```
+
+### 别名配置
+在monado.config.json的alias字段下配置别名
+以下为将`@`作为项目根目录下`src`目录别名的配置
+```json
+{
+ "alias":{
+    "@":"src"
+  },
+}
+```
