@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@mdx-js/react': ^2.1.1
-  '@monado/scripts': 0.0.51
+  '@monado/scripts': 0.0.52
   '@types/mdx': ^2.0.2
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.5
@@ -25,7 +25,7 @@ specifiers:
 
 dependencies:
   '@mdx-js/react': 2.1.1_react@18.1.0
-  '@monado/scripts': 0.0.51_sass@1.52.1
+  '@monado/scripts': 0.0.52_sass@1.52.1
   i18next: 21.8.4
   immer: 9.0.14
   prism-react-renderer: 1.3.3_react@18.1.0
@@ -1539,8 +1539,8 @@ packages:
       react: 18.1.0
     dev: false
 
-  /@monado/scripts/0.0.51_sass@1.52.1:
-    resolution: {integrity: sha512-ou0ixxF6WcUJHfrVxs9p88+Lt8r4ZD04WvE3KsfpddAXr6y0j4kJ7j8tnDxerZMfhA715z3LQRhQ+ilc43dP2w==}
+  /@monado/scripts/0.0.52_sass@1.52.1:
+    resolution: {integrity: sha512-l5gLsTUrn7vG5RRho6WnAeYWNtsjkf9nARZTwAgKnlCxMbgmK20ND+sIZ6/MUukboyH2krSiZPg9a57rxS4uLw==}
     hasBin: true
     dependencies:
       '@mdx-js/loader': 2.1.1_webpack@5.72.1
@@ -4333,7 +4333,7 @@ packages:
       wrappy: 1.0.2
 
   /inherits/2.0.3:
-    resolution: {integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=}
+    resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
     dev: false
 
   /inherits/2.0.4:
