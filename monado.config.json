@@ -7,11 +7,6 @@
   "alias": {
     "@": "src"
   },
-  "featrue": {
-    "mdx": true,
-    "cssModule": true,
-    "scss": true
-  },
   "plugins": {
     "bundleAnalyzer": false
   }
