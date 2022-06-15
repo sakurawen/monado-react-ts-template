@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.1",
-    "@monado/scripts": "0.0.55",
+    "@monado/scripts": "0.0.56",
     "i18next": "^21.8.9",
     "immer": "^9.0.15",
     "prism-react-renderer": "^1.3.3",
