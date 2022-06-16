@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "monado-scripts build",
-    "start": "monado-scripts start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "monado-scripts start"
   },
   "keywords": [],
   "author": "",
