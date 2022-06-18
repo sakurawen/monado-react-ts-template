@@ -4,6 +4,7 @@
     "port": 5000,
     "proxy": {}
   },
+  "sourceMap":false,
   "alias": {
     "@": "src"
   },
