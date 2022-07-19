@@ -1,9 +1,9 @@
-import { initReactI18next } from 'react-i18next';
 import i18n from 'i18next';
-import zh from './lang/zh.json';
+import { initReactI18next } from 'react-i18next';
 import en from './lang/en.json';
 import jp from './lang/jp.json';
 import kr from './lang/kr.json';
+import zh from './lang/zh.json';
 
 i18n.use(initReactI18next).init({
 	resources: {

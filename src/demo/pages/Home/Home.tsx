@@ -1,5 +1,5 @@
+import TodoList from '@/demo/components/TodoList';
 import { FC } from 'react';
-import TodoList from '@/components/TodoList';
 import { useTranslation } from 'react-i18next';
 
 const Home: FC = () => {

@@ -1,9 +1,9 @@
-import { RouteObject, Navigate } from 'react-router-dom';
-import Home from '@/pages/Home';
+import Loading from '@/demo/components/Loading';
+import Home from '@/demo/pages/Home';
 import { lazy, Suspense } from 'react';
-import Loading from '@/components/Loading';
+import { Navigate, RouteObject } from 'react-router-dom';
 
-const About = lazy(() => import('@/pages/About'));
+const About = lazy(() => import('@/demo/pages/About'));
 const routes: RouteObject[] = [
 	{
 		path: '/',

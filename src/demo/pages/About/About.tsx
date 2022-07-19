@@ -1,5 +1,5 @@
-import Content from './Content.mdx';
 import { useMDXComponents } from '@mdx-js/react';
+import Content from './Content.mdx';
 
 const About = () => {
 	const components = useMDXComponents();

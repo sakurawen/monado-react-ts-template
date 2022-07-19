@@ -1,28 +1,17 @@
+import { useTodoList } from '@/demo/hooks';
 import { FC, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useTodoList } from '@/hooks';
 import shallow from 'zustand/shallow';
 
 const TodoList: FC = () => {
-
-	const [
+	const {
 		data,
 		inputValue,
 		setInputValue,
 		pushListItem,
 		delListItem,
 		cleanInputValue,
-	] = useTodoList(
-		(state) => [
-			state.data,
-			state.inputValue,
-			state.setInputValue,
-			state.pushListItem,
-			state.delListItem,
-			state.cleanInputValue,
-		],
-		shallow
-	);
+	} = useTodoList((state) => state, shallow);
 
 	const inputRef = useRef<HTMLInputElement>(null);
 
