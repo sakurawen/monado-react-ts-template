@@ -1,11 +1,11 @@
 import '@/app.css';
-import components from '@/demo/components/mdx';
-import Menu from '@/demo/components/Menu';
 import '@/demo/demo.css';
 import '@/demo/i18n';
-import DemoRoutes from '@/demo/router';
+import components from '@/demo/components/mdx';
+import router from '@/demo/router';
 import { MDXProvider } from '@mdx-js/react';
 import { FC, useEffect } from 'react';
+import { RouterProvider } from 'react-router-dom';
 
 const Demo: FC = () => {
 	useEffect(() => {
@@ -22,8 +22,7 @@ const Demo: FC = () => {
 	return (
 		<div className='mx-auto max-w-2xl px-4'>
 			<MDXProvider components={components}>
-				<DemoRoutes />
-				<Menu />
+				<RouterProvider router={router}/>
 			</MDXProvider>
 		</div>
 	);
