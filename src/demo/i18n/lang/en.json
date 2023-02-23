@@ -1,5 +1,6 @@
 {
   "desc": "React template, integrating React Router, Zustand, React I18next, Tailwindcss",
   "empty-list":"empty list",
-  "add":"Append"
+  "add":"Append",
+  "about":"MONADO The name comes from the game \"Altered Excalibur\" is one of the weapons used by the protagonist, Excalibur MONADO is said to be given by the gods to **Homes** the holy sword. This is not actually a sword, but a sword-shaped \"device\" that contains some kind of power, and can change into the form of the blade of light when fighting."
 }
