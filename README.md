@@ -8,28 +8,27 @@
 npx @monado/cli create <projectName>
 ```
 
-
 ## configuration
+
 在项目文件夹下创建 monado.config.json 作为配置文件，目前支持的配置如下
 
 ```json
 {
-	"publicPath": "/",
-	"devServer": {
-		"port": 4000,
-		"proxy": {
-			"/api": "http://localhost:9000"
-		}
-	},
-  "alias":{
-    "@":"src"
+  "publicPath": "/",
+  "devServer": {
+    "port": 4000,
+    "proxy": {
+      "/api": "http://localhost:9000"
+    }
   },
-	"plugins": {
-		"bundleAnalyzer": false
-	}
+  "alias": {
+    "@": "src"
+  },
+  "plugins": {
+    "bundleAnalyzer": false
+  }
 }
 ```
-
 
 ### 启用 mdx
 
@@ -53,26 +52,28 @@ npm install sass
 
 ```json
 {
-	"devServer": {
-		"proxy": {
-			"/api": {
-				"target": "http://localhost:8000",
-				"pathRewrite": {
-					"^/api": ""
-				}
-			}
-		}
-	}
+  "devServer": {
+    "proxy": {
+      "/api": {
+        "target": "http://localhost:8000",
+        "pathRewrite": {
+          "^/api": ""
+        }
+      }
+    }
+  }
 }
 ```
 
 ### 别名配置
-在monado.config.json的alias字段下配置别名
+
+在 monado.config.json 的 alias 字段下配置别名
 以下为将`@`作为项目根目录下`src`目录别名的配置
+
 ```json
 {
- "alias":{
-    "@":"src"
-  },
+  "alias": {
+    "@": "src"
+  }
 }
 ```

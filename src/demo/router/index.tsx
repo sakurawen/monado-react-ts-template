@@ -6,33 +6,33 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import RootLayout from '@/demo/components/RootLayout';
 
 const router = createBrowserRouter([
-	{
-		path: '',
-		element: <RootLayout />,
-		children: [
-			{
-				path: '/',
-				element: <Home />,
-			},
-			{
-				path: '/about',
-				element: (
-					<Suspense fallback={<Loading />}>
-						<About />
-					</Suspense>
-				),
-			},
-			{
-				path: '*',
-				element: (
-					<Navigate
-						to='/'
-						replace={true}
-					/>
-				),
-			},
-		],
-	},
+  {
+    path: '',
+    element: <RootLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: '/about',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <About />
+          </Suspense>
+        ),
+      },
+      {
+        path: '*',
+        element: (
+          <Navigate
+            to='/'
+            replace={true}
+          />
+        ),
+      },
+    ],
+  },
 ]);
 
 export default router;

@@ -6,25 +6,25 @@ import kr from './lang/kr.json';
 import zh from './lang/zh.json';
 
 i18n.use(initReactI18next).init({
-	resources: {
-		zh: {
-			translation: zh,
-		},
-		en: {
-			translation: en,
-		},
-		jp: {
-			translation: jp,
-		},
-		kr: {
-			translation: kr,
-		},
-	},
-	debug: false,
-	fallbackLng: 'zh',
-	interpolation: {
-		escapeValue: false,
-	},
+  resources: {
+    zh: {
+      translation: zh,
+    },
+    en: {
+      translation: en,
+    },
+    jp: {
+      translation: jp,
+    },
+    kr: {
+      translation: kr,
+    },
+  },
+  debug: false,
+  fallbackLng: 'zh',
+  interpolation: {
+    escapeValue: false,
+  },
 });
 
 export default i18n;
